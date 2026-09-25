@@ -6,4 +6,5 @@ Preview with `python3 -m http.server 8765 --bind 127.0.0.1`.
 The site includes the paper, interactive figures, and articulated hardware models.
 Third-party library licenses are included alongside the bundled libraries.
 
-Visitor analytics are disabled during anonymous review.
+Private, cookie-free analytics record page views and interactions. Browser Do Not
+Track, Global Privacy Control, and `?analytics=off` disable measurement.
