@@ -26,7 +26,7 @@
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/index.css?v=20261011-study-layout">
   <link rel="stylesheet" href="./static/css/interactive-figures.css">
   <link rel="stylesheet" href="./static/css/hardware-viewer.css">
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -363,60 +363,56 @@
 </div>
 
 <div class="rows">
-  <div class="container is-max-desktop">
+  <div class="container is-max-desktop study-section" id="whole-body-corrections">
     <h2 class="title is-3">Corrections Span the Whole Body</h2>
-    <div class="columns is-vcentered">
-      <div class="column is-half">
-        <img class="method-image" src="./static/images/whole_body_takeover.png" alt="Body-part activation shares during JoyLo+ corrections.">
-        <p class="figure-caption">
-          <strong>Body-part activation shares during JoyLo+ corrections.</strong> Bars pool four 25-episode rounds; each
-          part receives one vote per takeover segment after three consecutive active frames.
-        </p>
-      </div>
-      <div class="column is-half">
-        <div class="content has-text-justified">
-          <p>
-            The motorized bilateral leaders control both arms, while the JoyCon controls the torso and base, allowing a single
-            global takeover to coordinate several parts of the R1 Pro simultaneously.
-          </p>
-          <p>
-            Operators use JoyLo+ to correct more than arm motion: base activations account for an average of
-            <strong>34.2%</strong> of body-part votes across all four real-world tasks, while torso activations contribute
-            an average of <strong>8.2%</strong> in the three tasks where they occur. Arm usage varies by task, with comparable
-            left and right arm shares in Books and Breakfast but larger left-arm shares in Radio and Popcorn.
-          </p>
-        </div>
-      </div>
+    <div class="content study-intro">
+      <p>
+        The motorized bilateral leaders control both arms, while the JoyCon controls the torso and base, allowing a single
+        global takeover to coordinate several parts of the R1 Pro simultaneously.
+      </p>
+    </div>
+    <div class="study-figure">
+      <img class="method-image" src="./static/images/whole_body_takeover.png" alt="Body-part activation shares during JoyLo+ corrections.">
+      <p class="figure-caption">
+        <strong>Body-part activation shares during JoyLo+ corrections.</strong> Bars pool four 25-episode rounds; each
+        part receives one vote per takeover segment after three consecutive active frames.
+      </p>
+    </div>
+    <div class="content study-summary">
+      <p>
+        Operators use JoyLo+ to correct more than arm motion: base activations account for an average of
+        <strong>34.2%</strong> of body-part votes across all four real-world tasks, while torso activations contribute
+        an average of <strong>8.2%</strong> in the three tasks where they occur. Arm usage varies by task, with comparable
+        left and right arm shares in Books and Breakfast but larger left-arm shares in Radio and Popcorn.
+      </p>
     </div>
   </div>
 </div>
 
 <div class="rows">
-  <div class="container is-max-desktop">
+  <div class="container is-max-desktop study-section" id="operator-study">
     <h2 class="title is-3">Operator Study</h2>
-    <div class="columns is-vcentered">
-      <div class="column is-half">
-        <img class="method-image" src="./static/images/operator_study.png" alt="Operator study on Franka mug hanging across three teleoperators.">
-        <p class="figure-caption">
-          <strong>Operator study on Franka mug hanging.</strong> (a) Cumulative fraction of timesteps under human control.
-          (b) Cumulative takeover-free episode counts.
-        </p>
-      </div>
-      <div class="column is-half">
-        <div class="content has-text-justified">
-          <p>
-            We examine policy improvement and intervention burden across three teleoperators with varying levels of
-            experience on Franka Mug Hanging. Each operator collects 25 episodes per round over three correction rounds,
-            totaling 225 episodes.
-          </p>
-          <p>
-            Cumulative intervention share decreases for all three operators, from 16.1% to 11.8%, 34.6% to 19.9%, and
-            16.4% to 14.7%. By Round 3, takeover-free episodes account for 40–55% of each operator's cumulative collection,
-            suggesting that I3L enables iterative refinement with declining intervention burden across users with varied
-            teleoperation experience.
-          </p>
-        </div>
-      </div>
+    <div class="content study-intro">
+      <p>
+        We examine policy improvement and intervention burden across three teleoperators with varying levels of
+        experience on Franka Mug Hanging. Each operator collects 25 episodes per round over three correction rounds,
+        totaling 225 episodes.
+      </p>
+    </div>
+    <div class="study-figure">
+      <img class="method-image" src="./static/images/operator_study.png" alt="Operator study on Franka mug hanging across three teleoperators.">
+      <p class="figure-caption">
+        <strong>Operator study on Franka mug hanging.</strong> (a) Cumulative fraction of timesteps under human control.
+        (b) Cumulative takeover-free episode counts.
+      </p>
+    </div>
+    <div class="content study-summary">
+      <p>
+        Cumulative intervention share decreases for all three operators, from 16.1% to 11.8%, 34.6% to 19.9%, and
+        16.4% to 14.7%. By Round 3, takeover-free episodes account for 40–55% of each operator's cumulative collection,
+        suggesting that I3L enables iterative refinement with declining intervention burden across users with varied
+        teleoperation experience.
+      </p>
     </div>
   </div>
 </div>
