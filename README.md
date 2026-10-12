@@ -14,3 +14,10 @@ Third-party library licenses are included alongside the bundled libraries.
 
 Private, cookie-free analytics record page views and interactions. Browser Do Not
 Track, Global Privacy Control, and `?analytics=off` disable measurement.
+
+The device explorer has R1 Pro / Franka buttons in the upper-right corner and a
+matching robot inset in the lower-right corner. The inset follows the joint
+sliders and orbit controls. R1 Pro uses the inverse of the takeover mapping;
+Franka illustrates joint motion relative to the home poses within Panda limits.
+The Panda model source, modifications, and Apache-2.0 license are documented in
+`static/models/franka-NOTICE.txt` and `static/models/franka-LICENSE.txt`.
